@@ -1,7 +1,7 @@
 body{
     width: 100vw;
     font-size: 100%;
-    font-family: "Acumin Pro";
+    font-family: 'Acumin Pro', sans-serif;
 }
 
 #intro{
@@ -133,7 +133,7 @@ wrapper {
     letter-spacing: 0.3rem;
     font-family: 'Acumin Pro', sans-serif;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     text-align: center;
     text-transform: uppercase;
 }
