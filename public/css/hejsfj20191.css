@@ -1,11 +1,12 @@
 body{
     width: 100vw;
     font-size: 100%;
+    font-family: "Acumin Pro";
 }
 
 #intro{
     color: #ffffff;
-    background: url(../img/hejsfj_nazare.jpg) no-repeat center;
+    background: url(../img/sfj.JPG) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,12 +20,11 @@ body{
 }
 
 .project-tile{
-    padding: 0.5em;
-    margin: 1em;
-    border-radius: 0.5em;
+    padding: 0.3rem;
+    margin: 0.5rem;
     color: #fff;
     text-align: start;
-    border: 1px #ffffff solid;
+    border-bottom: 4px #ffffff solid;
 }
 
 .projects{
@@ -97,7 +97,7 @@ wrapper {
     max-width: 60vw;
     margin-left: 20vw;
     margin-right: 20vw;
-    margin-top: 2em;
+    margin-top: 3.8rem;
 }
 
 .social-icons i{
@@ -130,11 +130,12 @@ wrapper {
 }
 
 .title--intro{
-    letter-spacing: 0.5rem;
-    font-family: 'Playfair Display SC', serif;
-    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Acumin Pro', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
     text-align: center;
-    padding: 1rem;
+    text-transform: uppercase;
 }
 
 a{
