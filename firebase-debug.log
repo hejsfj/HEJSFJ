@@ -1,0 +1,138 @@
+[debug] [2019-02-19T09:53:02.071Z] ----------------------------------------------------------------------
+[debug] [2019-02-19T09:53:02.073Z] Command:       /usr/local/Cellar/node/11.10.0/bin/node /usr/local/bin/firebase deploy --project hejsfj-88
+[debug] [2019-02-19T09:53:02.073Z] CLI Version:   6.3.1
+[debug] [2019-02-19T09:53:02.074Z] Platform:      darwin
+[debug] [2019-02-19T09:53:02.074Z] Node Version:  v11.10.0
+[debug] [2019-02-19T09:53:02.074Z] Time:          Tue Feb 19 2019 10:53:02 GMT+0100 (Central European Standard Time)
+[debug] [2019-02-19T09:53:02.074Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-19T09:53:02.084Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-19T09:53:02.084Z] > authorizing via signed-in user
+[debug] [2019-02-19T09:53:02.084Z] [iam] checking project hejsfj-88 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-02-19T09:53:02.086Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hejsfj-88:testIamPermissions  
+
+[debug] [2019-02-19T09:53:02.913Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-19T09:53:02.915Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/hejsfj-88  
+ 
+[debug] [2019-02-19T09:53:03.120Z] <<< HTTP RESPONSE 200
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions.
+ Please upgrade using npm install --save firebase-functions@latest in your functions directory.
+[info] 
+[info] === Deploying to 'hejsfj-88'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] Running command: npm --prefix "$RESOURCE_DIR" run build
+[info] ✔  functions: Finished running predeploy script.
+[info] i  database: checking rules syntax...
+[debug] [2019-02-19T09:53:08.432Z] >>> HTTP REQUEST PUT https://hejsfj-88.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+
+[debug] [2019-02-19T09:53:08.963Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database hejsfj-88 is valid
+[debug] [2019-02-19T09:53:08.964Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/hejsfj-88  
+ 
+[debug] [2019-02-19T09:53:09.851Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2019-02-19T09:53:09.852Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/hejsfj-88:test  
+
+[debug] [2019-02-19T09:53:10.650Z] <<< HTTP RESPONSE 200
+[info] ✔  storage: rules file storage.rules compiled successfully
+[info] i  firestore: checking firestore.rules for compilation errors...
+[info] i  firestore: reading indexes from firestore.indexes.json...
+[debug] [2019-02-19T09:53:10.653Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/hejsfj-88:test  
+
+[debug] [2019-02-19T09:53:11.374Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[debug] [2019-02-19T09:53:11.375Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "serve": "npm run build && firebase serve --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "~5.12.1",
+    "firebase-functions": "^1.0.3"
+  },
+  "devDependencies": {
+    "tslint": "^5.8.0",
+    "typescript": "^2.5.3"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-02-19T09:53:11.376Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/hejsfj-88?view=CONSUMER_VIEW  
+ 
+[debug] [2019-02-19T09:53:11.376Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/hejsfj-88?view=CONSUMER_VIEW  
+ 
+[debug] [2019-02-19T09:53:12.597Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-19T09:53:12.614Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2019-02-19T09:53:12.615Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hejsfj-88  
+ 
+[debug] [2019-02-19T09:53:13.416Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-19T09:53:13.416Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/160828782243:getServerAppConfig  
+ 
+[debug] [2019-02-19T09:53:13.564Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-19T09:53:13.565Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/hejsfj-88/versions  
+
+[debug] [2019-02-19T09:53:14.856Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2019-02-19T09:53:14.858Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/hejsfj-88/rulesets  
+
+[debug] [2019-02-19T09:53:15.737Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-19T09:53:15.737Z] [rules] created ruleset projects/hejsfj-88/rulesets/d46993e2-db2d-4a34-b57a-2d2d48515d33
+[info] i  firestore: uploading rules firestore.rules...
+[debug] [2019-02-19T09:53:15.739Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/hejsfj-88/rulesets  
+
+[debug] [2019-02-19T09:53:15.739Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/hejsfj-88/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2019-02-19T09:53:16.033Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-19T09:53:16.033Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/hejsfj-88/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2019-02-19T09:53:16.385Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: deployed indexes in firestore.indexes.json successfully
+[debug] [2019-02-19T09:53:16.657Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-19T09:53:16.657Z] [rules] created ruleset projects/hejsfj-88/rulesets/176610bb-98d5-4438-9f8a-11551fb9700e
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2019-02-19T09:53:16.658Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/hejsfj-88/configs  
+ 
+[debug] [2019-02-19T09:53:17.614Z] <<< HTTP RESPONSE 200
+[info] i  hosting[hejsfj-88]: beginning deploy...
+[info] i  hosting[hejsfj-88]: found 26 files in public
+[debug] [2019-02-19T09:53:17.713Z] [hosting] hash cache [cHVibGlj] load error: lines is not defined
+[debug] [2019-02-19T09:53:18.244Z] [hosting] hash cache [cHVibGlj] stored for 26 files
+[debug] [2019-02-19T09:53:18.244Z] [hosting][hash queue][FINAL]
+[debug] [2019-02-19T09:53:18.244Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/hejsfj-88/versions/41df9176b4d5f1d8:populateFiles  
+ <request body omitted>
+[debug] [2019-02-19T09:53:19.625Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-19T09:53:19.626Z] [hosting][populate queue][FINAL]
+[debug] [2019-02-19T09:53:19.626Z] [hosting] uploads queued: 0
+[debug] [2019-02-19T09:53:19.626Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[hejsfj-88]: file upload complete
+[debug] [2019-02-19T09:53:19.627Z] [hosting] deploy completed after 1926ms
+[info] i  database: releasing rules...
+[debug] [2019-02-19T09:53:19.628Z] >>> HTTP REQUEST PUT https://hejsfj-88.firebaseio.com/.settings/rules.json  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+
+[debug] [2019-02-19T09:53:20.191Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules for database hejsfj-88 released successfully
+[debug] [2019-02-19T09:53:20.192Z] [rules] releasing firebase.storage/hejsfj-88.appspot.com with ruleset projects/hejsfj-88/rulesets/d46993e2-db2d-4a34-b57a-2d2d48515d33
+[debug] [2019-02-19T09:53:20.192Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/hejsfj-88/releases/firebase.storage/hejsfj-88.appspot.com  
+
