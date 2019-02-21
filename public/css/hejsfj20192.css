@@ -20,22 +20,31 @@ body{
 }
 
 .project-tile{
-    padding: 0.3rem;
+    padding: 0.5rem;
     margin: 0.5rem;
-    color: #fff;
-    text-align: start;
-    border-bottom: 4px #ffffff solid;
+    vertical-align: middle;
+    color: #000;
+    padding-top: 0.7rem;
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    text-align: center;
+    /* border-bottom: 4px #ffffff solid; */
     transition: 1s;
 }
 
 .project-tile:hover{
-    padding: 0.3rem;
+    padding: 0.5rem;
     margin: 0.5rem;
+    vertical-align: middle;
     color: #fff;
-    text-align: start;
-    border-bottom: 4px #ffffff dashed;
+    padding-top: 0.7rem;
+    font-size: 1.3rem;
+    background-color: #000;
+    text-align: center;
+    /* border-bottom: 4px #ffffff solid; */
     transition: 1s;
 }
+
 
 .projects{
     margin-top: 1rem;
@@ -143,17 +152,7 @@ wrapper {
     letter-spacing: 0.3rem;
     font-family: 'Acumin Pro', sans-serif;
     font-weight: 600;
-    font-size: 1.3rem;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 1s;
-}
-
-
-.title--intro:hover{
-    letter-spacing: 1.3rem;
-    font-family: 'Acumin Pro', sans-serif;
-    font-weight: 600;
+    font-size: 2.8rem;
     text-align: center;
     text-transform: uppercase;
     transition: 1s;
@@ -172,4 +171,43 @@ a:hover{
     -ms-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
+}
+
+
+@media only screen and (max-width: 35em) {
+    .title--intro{
+        letter-spacing: 0.3rem;
+        font-family: 'Acumin Pro', sans-serif;
+        font-weight: 600;
+        font-size: 200%;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 1s;
+    }
+
+    .project-tile{
+        padding: 0.5rem;
+        margin: 0.5rem;
+        vertical-align: middle;
+        color: #000;
+        padding-top: 0.7rem;
+        font-size: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        /* border-bottom: 4px #ffffff solid; */
+        transition: 1s;
+    }
+
+    .project-tile:hover{
+        padding: 0.5rem;
+        margin: 0.5rem;
+        vertical-align: middle;
+        color: #fff;
+        padding-top: 0.7rem;
+        font-size: 100%;
+        background-color: #000;
+        text-align: center;
+        /* border-bottom: 4px #ffffff solid; */
+        transition: 1s;
+    }
 }
