@@ -1,2 +1,6 @@
 /functions/node_modules
 /node_modules
+.DS_Store
+.firebaserc
+*.cache
+hosting.cHVibGlj.cache
