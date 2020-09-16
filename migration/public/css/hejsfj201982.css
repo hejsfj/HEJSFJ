@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   font-size: 100%;
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 
 #intro {
@@ -29,6 +29,7 @@ body {
   /* border-bottom: 4px #ffffff solid; */
   transition: 1s;
   display: inline;
+  font-weight: 900;
 }
 
 .project-tile:hover {
@@ -112,6 +113,12 @@ wrapper {
   margin-top: 0rem;
 }
 
+wrapperImprint {
+  max-width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 30vh;
+}
 .social-icons i {
   color: #ffffff;
   -webkit-transition: 1s;
@@ -141,7 +148,7 @@ wrapper {
 
 .title--intro {
   letter-spacing: 0.3rem;
-  font-family: 'Acumin Pro', sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 600;
   font-size: 2.8rem;
 
@@ -166,7 +173,7 @@ a:hover {
 @media only screen and (max-width: 35em) {
   .title--intro {
     letter-spacing: 0.3rem;
-    font-family: 'Acumin Pro', sans-serif;
+    font-family: 'Hind', sans-serif;
     font-weight: 600;
     font-size: 200%;
 
