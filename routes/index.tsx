@@ -218,7 +218,7 @@ export default function Home() {
                         <div className="">
                             <div className="mx-auto">
                                 <div className="mx-auto max-w-3xl lg:mx-0">
-                                    <p className="mt-2 text-8xl font-bold tracking-tight text-white sm:text-6xl">Sebastian
+                                    <p className="mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl">Sebastian
                                         Frederik Jacobsen</p>
                                     <p className="mt-3 text-xl leading-8 text-white">
                                         Hej, I am glad to meet you here. I'm a Product Manager, Entreprenuer and
@@ -231,10 +231,10 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20 text-xl leading-8 text-white font-bold">
+                    <div className="mt-10 sm:mt-20 text-xl leading-8 text-white font-bold">
                         Some things I did so far.
                     </div>
-                    <div className="flex flex-row gap-x-4 mt-2">
+                    <div className="flex flex-col sm:flex-row gap-y-2 sm:gap-y-0 sm:gap-x-4 mt-2">
                         {projects.map((project) => (
                             <a href={`#${project.anchor}`}>
                                 <button type="button"

@@ -30,7 +30,7 @@ export default function Project(props: ProjectProps) {
                         <div className="mx-auto">
                             <div className="mx-auto max-w-3xl lg:mx-0">
 
-                                <p className="mt-2 text-6xl font-bold tracking-tight text-white sm:text-6xl">{props.title}</p>
+                                <p className="mt-2 text-5xl sm:text-6xl font-bold tracking-tight text-white">{props.title}</p>
                                 <p className="mt-3 text-xl leading-8 text-white">
                                     {props.description}</p>
                             </div>
@@ -38,12 +38,14 @@ export default function Project(props: ProjectProps) {
                                 <div className="relative">
                                     <div className="flex flex-col items-start">
                                         {props.highlights ? props.highlights.map((highlight) => (
-                                            <div className="flex flex-row items-center">
+                                            <div className="flex flex-col sm:flex-row ">
+                                                <div className="flex flex-row items-center">
                                                 <ArrowRight size={16} color={'white'}/>
                                                 <div className="inline font-semibold text-white ml-1">
                                                     {highlight.title}
                                                 </div>
-                                                <div className="inline ml-2">
+                                                </div>
+                                                <div className="inline sm:ml-2 ml-5">
                                                     {highlight.description}
                                                 </div>
                                             </div>
