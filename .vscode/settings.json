@@ -13,5 +13,16 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "plaintext": "javascript",
+    "css": "css",
+    "typescriptreact": "html",
+    "typescript": "javascript"
   }
 }
