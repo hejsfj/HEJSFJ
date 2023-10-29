@@ -1,9 +1,8 @@
 interface IconProps {
     size: number;
-    color: string;
+
 }
 export default function ArrowRight(props: IconProps) {
-    props.color === 'white' ? props.color = '#ffffff' : props.color = '#000000';
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={props.size} height={props.size} viewBox="0 0 448 512" fill="currentColor">
             <path

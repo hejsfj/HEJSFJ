@@ -57,7 +57,7 @@ export default function Project(props: ProjectProps) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="mx-auto mt-20 text-base leading-7 text-white lg:mx-0 lg:max-w-none">
+                            <div className="mx-auto mt-8 sm:mt-20 text-base leading-7 text-white lg:mx-0 lg:max-w-none">
                                 <div className="relative">
                                     <a href={props.link}>
                                         <button type="button"
