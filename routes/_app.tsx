@@ -1,6 +1,7 @@
 // @ts-ignore
 import {AppProps, PageProps} from "$fresh/server.ts";
-
+import Analytics from 'analytics'
+import googleAnalytics from '@analytics/google-analytics'
 
 // @ts-ignore
 import {asset} from "$fresh/runtime.ts";
@@ -9,6 +10,17 @@ const DESCRIPTION =
     "Hej, my name is Sebastian Frederik Jacobsen. I am glad to meet you here. I'm a product manager at CARIAD, maker, creator & optimist living in Berlin.";
 
 export default function App({Component}: AppProps, props: PageProps) {
+
+    const analytics = Analytics({
+        app: 'awesome-app',
+        plugins: [
+            googleAnalytics({
+                measurementIds: ['G-VQJ4YX34EV']
+            })
+        ]
+    })
+
+    analytics.page()
 
     return (
         <html>
@@ -34,14 +46,6 @@ export default function App({Component}: AppProps, props: PageProps) {
                 rel="stylesheet"
             >
             </link>
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQJ4YX34EV"></script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'G-VQJ4YX34EV');
-            </script>
             <title>Sebastian Frederik Jacobsen</title>
         </head>
         <body>

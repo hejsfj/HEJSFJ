@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@analytics/google-analytics": "^1.0.7",
+    "analytics": "^0.8.11"
+  }
+}
