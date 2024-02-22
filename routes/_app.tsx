@@ -1,7 +1,7 @@
 // @ts-ignore
 import {AppProps, PageProps} from "$fresh/server.ts";
-import Analytics from 'analytics'
-import googleAnalytics from '@analytics/google-analytics'
+import Analytics from 'npm:analytics'
+import googleAnalytics from 'npm:@analytics/google-analytics'
 
 // @ts-ignore
 import {asset} from "$fresh/runtime.ts";
