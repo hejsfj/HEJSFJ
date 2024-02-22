@@ -38,6 +38,14 @@ export default function App({Component}: AppProps, props: PageProps) {
         </head>
         <body>
         <Component/>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQJ4YX34EV"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-VQJ4YX34EV');
+        </script>
         </body>
         </html>
     );
