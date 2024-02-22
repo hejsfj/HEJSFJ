@@ -33,7 +33,6 @@
     "twind": "https://esm.sh/twind@0.16.19",
     "twind/": "https://esm.sh/twind@0.16.19/",
     "$std/": "https://deno.land/std@0.193.0/",
-    "$ga4": "https://raw.githubusercontent.com/denoland/ga4/main/mod.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
