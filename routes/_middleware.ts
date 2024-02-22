@@ -79,12 +79,14 @@ function ga4(
 }
 
 export async function handler(
+
     req: Request,
     ctx: FreshContext,
 ): Promise<Response> {
     let err;
     let res: Response;
     const start = performance.now();
+    console.log("Test");
     try {
         const resp = await ctx.next();
         const headers = new Headers(resp.headers);
