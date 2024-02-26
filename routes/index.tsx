@@ -1,4 +1,3 @@
-import { useSignal } from "@preact/signals";
 import Project from "../islands/Project.tsx";
 import ArrowRight from "../components/icons/ArrowRight.tsx";
 import WhatsAppIcon from "../components/icons/WhatsAppIcon.tsx";
