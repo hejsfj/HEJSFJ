@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'display': ['Playfair Display'],
-        'body': ['Inter'],
+        "display": ["Playfair Display"],
+        "body": ["Inter"],
       },
-  }
-  }
+    },
+  },
 } as Options;
