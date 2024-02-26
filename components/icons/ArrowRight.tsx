@@ -1,5 +1,6 @@
 interface IconProps {
   size: number;
+  color: string;
 }
 export default function ArrowRight(props: IconProps) {
   return (

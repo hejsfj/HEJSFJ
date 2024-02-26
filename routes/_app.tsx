@@ -1,13 +1,11 @@
-// @ts-ignore
-import { AppProps, PageProps } from "$fresh/server.ts";
+import { PageProps } from "$fresh/server.ts";
 
-// @ts-ignore
 import { asset } from "$fresh/runtime.ts";
 
 const DESCRIPTION =
   "Hej, my name is Sebastian Frederik Jacobsen. I am glad to meet you here. I'm a product manager at CARIAD, maker, creator & optimist living in Berlin.";
 
-export default function App({ Component }: AppProps, props: PageProps) {
+export default function App({ Component }: PageProps) {
   return (
     <html>
       <head>

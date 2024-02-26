@@ -1,20 +1,13 @@
-//@ts-ignore
 import LinkedInIcon from "./icons/LinkedInIcon.tsx";
-//@ts-ignore
 import InstagramIcon from "./icons/InstagramIcon.tsx";
-//@ts-ignore
 import SpotifyIcon from "./icons/SpotifyIcon.tsx";
-//@ts-ignore
 import GithubIcon from "./icons/GithubIcon.tsx";
-//@ts-ignore
 import PinterestIcon from "./icons/PinterestIcon.tsx";
-//@ts-ignore
 import EnvelopeOpenIcon from "./icons/EvenlopeOpenIcon.tsx";
-//@ts-ignore
-import AdressCardIcon from "./icons/AdressCardIcon.tsx";
-//@ts-ignore
+import AddressCardIcon from "./icons/AddressCardIcon.tsx";
 import TwitterIcon from "./icons/TwitterIcon.tsx";
 
+// deno-lint-ignore no-empty-interface
 interface HeaderProps {
 }
 
@@ -88,7 +81,7 @@ export default function Header(props: HeaderProps) {
             href="/imprint"
             className="text-sm font-semibold leading-6 text-white"
           >
-            <AdressCardIcon size={16} />
+            <AddressCardIcon size={16} />
           </a>
         </div>
       </nav>

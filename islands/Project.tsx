@@ -1,16 +1,14 @@
-// @ts-ignore
 import ArrowRight from "../components/icons/ArrowRight.tsx";
-// @ts-ignore
 import PlayIcon from "../components/icons/PlayIcon.tsx";
 
 interface ProjectProps {
-  title: String;
-  anchor: String;
-  link: String;
-  description: String;
+  title: string;
+  anchor: string;
+  link: string;
+  description: string;
   backgroundImage: string;
   highlights: Array<{ title: string; description: string }>;
-  buttonText: String;
+  buttonText: string;
 }
 
 //add fontawesome icons to this component here
@@ -45,7 +43,7 @@ export default function Project(props: ProjectProps) {
                       ? props.highlights.map((highlight) => (
                         <div className="flex flex-col sm:flex-row ">
                           <div className="flex flex-row items-center">
-                            <ArrowRight size={16} color={"white"} />
+                            <ArrowRight size={16} color="white" />
                             <div className="inline font-semibold text-white ml-1">
                               {highlight.title}
                             </div>

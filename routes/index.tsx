@@ -1,20 +1,11 @@
-// @ts-ignore
 import { useSignal } from "@preact/signals";
-// @ts-ignore
 import Project from "../islands/Project.tsx";
-//@ts-ignore
 import ArrowRight from "../components/icons/ArrowRight.tsx";
-//@ts-ignore
 import WhatsAppIcon from "../components/icons/WhatsAppIcon.tsx";
-//@ts-ignore
 import SunIcon from "../components/icons/SunIcon.tsx";
-//@ts-ignore
 import CameraIcon from "../components/icons/CameraIcon.tsx";
-//@ts-ignore
 import MobileIcon from "../components/icons/MobileIcon.tsx";
-//@ts-ignore
 import PlayIcon from "../components/icons/PlayIcon.tsx";
-//@ts-ignore
 import Header from "../components/Header.tsx";
 
 //define an array of projects here based on the Project.tsx component above
