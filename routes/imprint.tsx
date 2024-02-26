@@ -7,7 +7,7 @@ export default function Imprint() {
       class="bg-black bg-fixed bg-center bg-cover"
       style="background-image: url('/img/sfj.png'); height: 100vh"
     >
-    <Header/>
+      <Header />
 
       <main class="h-full w-full">
         <div class="flex flex-col h-full">
