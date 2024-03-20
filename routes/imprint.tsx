@@ -16,7 +16,7 @@ export default function Imprint() {
               <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div class="w-full lg:shrink-0 ">
                   <h1 class="text-5xl text-white sm:text-5xl font-body uppercase tracking-wide font-bold">
-                    Imprint
+                    Imprint, Terms & Data Privacy
                   </h1>
                   <div class="flex flex-col">
                     <p class="relative mt-3 text-2xl leading-8 text-white sm:max-w-md lg:max-w-none font-body">
