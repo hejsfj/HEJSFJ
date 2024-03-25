@@ -19,7 +19,7 @@ export default function Imprint() {
                     Imprint, Terms & Data Privacy
                   </h1>
                   <div class="flex flex-col">
-                    <p class="relative mt-3 text-regular leading-8 text-white sm:max-w-md lg:max-w-none font-body">
+                    <p class="relative mt-3 text-regular text-white sm:max-w-md lg:max-w-none font-body">
                       Impressum Angaben gemäß § 5 TMG SFJ Capital UG Dhauner
                       Straße 42 67067 Ludwigshafen am Rhein Handelsregister: HRB
                       67315 Registergericht: Ludwigshafen am Rhein Vertreten
@@ -37,10 +37,10 @@ export default function Imprint() {
                       https://www.verbraucher-schlichter.de). Quelle:
                       https://www.e-recht24.de
                     </p>
-                    <p class="relative mt-3 text-2xl leading-8 text-white sm:max-w-md lg:max-w-none font-body">
+                    <p class="relative mt-3 text-2xl leading-8 text-white sm:max-w-md lg:max-w-none font-body font-bold uppercase">
                       Data Privacy
                     </p>
-                    <p class="relative mt-3 text-regular leading-8 text-white sm:max-w-md lg:max-w-none font-body">
+                    <p class="relative mt-3 text-regular text-white sm:max-w-md lg:max-w-none font-body">
                       The following notes provide a simple overview of what happens to your personal data when you visit our website or use our app. Personal data is all data with which you can be personally identified. For detailed information on data protection, please refer to our privacy policy listed below this text.
                       1. Introduction
                       This Privacy Policy (the “Policy”) describes how SFJ Capital UG. (“SFJ” or “we/us/our”) collects, uses, stores, shares and protects the personal information derived from the use made by the user (the “User”) both of the platform accessible via the domain https://hejsfj.com (the “Website”) and our Applications (Fred & Sunny Days Ahead) (the “App”), and through the services that are specifically offered to you via the Website or the App (referred to indistinctly as the “Services”).
