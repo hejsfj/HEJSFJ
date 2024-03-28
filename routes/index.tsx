@@ -11,11 +11,31 @@ import Header from "../components/Header.tsx";
 
 const projects = [
   {
+    title: "Fred | Achieve your goals",
+    anchor: "fred",
+    link: "https://apps.apple.com/de/app/fred-achieve-your-goals/id6478763884?l=en-GB",
+    description:
+      "Achieve your goals with Fred. Fred is your dedicated app to set and track your goals. By adding actionable steps to your goals you will always have a plan on how to achieve your goals. If you need some inspiration for your next goal you can explore the goal gallery, where you can add predefined best practice goals.",
+    backgroundImage: "/img/fred.jpg",
+    icon: "sun",
+    highlights: [
+      {
+        title: "iOS App.",
+        description: "Developed in SWIFTUI & SWIFT based on Supabase",
+      },
+      {
+        title: "AI powered best practice goals.",
+        description: "Fred's goal gallery with best practice goals is powered by ChatGPT",
+      },
+    ],
+    buttonText: "Download Now",
+  },
+  {
     title: "Sunny Days Ahead",
     anchor: "sun",
     link: "https://instagram.com/hejsfj",
     description:
-      "Every wondered, whats the best and sunniest location for your next vacation? I got you covered. Based on the climate datasets of this world, Sunny Days Ahead will guide you to the cities with the maxium sunshine and thus best vibes.",
+        "Every wondered, whats the best and sunniest location for your next vacation? I got you covered. Based on the climate datasets of this world, Sunny Days Ahead will guide you to the cities with the maxium sunshine and thus best vibes.",
     backgroundImage: "/img/sunny-days-ahead.jpg",
     icon: "sun",
     highlights: [
@@ -131,7 +151,7 @@ export default function Home() {
 
           <div className="flex sm:hidden mx-auto mt-8 sm:mt-20 text-base leading-7 text-white lg:mx-0 lg:max-w-none">
             <div className="relative">
-              <a href="#sun">
+              <a href="#fred">
                 <button
                   type="button"
                   className="inline-flex items-center gap-x-2 rounded-md border border-white px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
