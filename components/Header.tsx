@@ -6,6 +6,7 @@ import PinterestIcon from "./icons/PinterestIcon.tsx";
 import EnvelopeOpenIcon from "./icons/EvenlopeOpenIcon.tsx";
 import AddressCardIcon from "./icons/AddressCardIcon.tsx";
 import TwitterIcon from "./icons/TwitterIcon.tsx";
+import PrivacyIcon from "./icons/PrivacyIcon.tsx";
 
 // deno-lint-ignore no-empty-interface
 interface HeaderProps {
@@ -82,6 +83,12 @@ export default function Header(props: HeaderProps) {
             className="text-sm font-semibold leading-6 text-white"
           >
             <AddressCardIcon size={16} />
+          </a>
+          <a
+              href="/privacy"
+              className="text-sm font-semibold leading-6 text-white"
+          >
+            <PrivacyIcon size={16} />
           </a>
         </div>
       </nav>
