@@ -72,13 +72,6 @@ export default function Header(props: HeaderProps) {
             <PinterestIcon size={16} />
           </a>
           <a
-            href="https://techvibes.substack.com/embed"
-            className="text-white hover:text-white"
-          >
-            <span className="sr-only">Substack</span>
-            <EnvelopeOpenIcon size={16} />
-          </a>
-          <a
             href="/imprint"
             className="text-sm font-semibold leading-6 text-white"
           >
