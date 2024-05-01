@@ -103,9 +103,9 @@ const projects = [
   {
     title: "AOSFJ",
     anchor: "aosfj",
-    link: "https://aosfj.com",
+    link: "http://unsplash.com/hejsfj",
     description:
-      "My personal photo website, where you  find my latest shots and cities I have captured with my camera",
+      "My personal photos, where you find my latest shots and cities I have captured with my camera",
     backgroundImage: "/img/aosfj.jpg",
     icon: "camera",
     highlights: [
@@ -115,7 +115,7 @@ const projects = [
           "Explore my adventures and download those photos for whatever you make.",
       },
     ],
-    buttonText: "Visit AOSFJ.com",
+    buttonText: "Visit Unsplash",
   },
 ];
 
@@ -140,10 +140,8 @@ export default function Home() {
                   Sebastian Frederik Jacobsen
                 </p>
                 <p className="mt-0 sm:mt-3 text-xl leading-8 text-white">
-                  Hej, I am glad to meet you here. I'm a Product Manager,
-                  Entreprenuer and Optimist living in Berlin. I believe in a
-                  better tomorrow by creating digital products and experience
-                  with a lasting impact.
+                  Hej, I am glad to meet you here. I'm a Product Owner and Optimist living in Berlin. I believe in a
+                  better tomorrow by creating digital products and experience with a lasting impact.
                 </p>
               </div>
             </div>

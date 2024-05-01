@@ -7,6 +7,7 @@ import EnvelopeOpenIcon from "./icons/EvenlopeOpenIcon.tsx";
 import AddressCardIcon from "./icons/AddressCardIcon.tsx";
 import TwitterIcon from "./icons/TwitterIcon.tsx";
 import PrivacyIcon from "./icons/PrivacyIcon.tsx";
+import UnsplashIcon from "./icons/UnsplashIcon.tsx";
 
 // deno-lint-ignore no-empty-interface
 interface HeaderProps {
@@ -49,6 +50,13 @@ export default function Header(props: HeaderProps) {
           >
             <span className="sr-only">Instagram</span>
             <InstagramIcon size={16} />
+          </a>
+          <a
+              href="https://unsplash.com/@hejsfj"
+              className="text-white hover:text-white"
+          >
+            <span className="sr-only">Unsplash</span>
+            <UnsplashIcon size={16} />
           </a>
           <a
             href="https://open.spotify.com/playlist/5ZsAoxySgvnssdL8TbEqw2?si=H8XJJPngSw2dDJu-TOhXBQ&utm_medium=share&utm_source=linktree"
