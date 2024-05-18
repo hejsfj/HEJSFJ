@@ -8,6 +8,7 @@ import AddressCardIcon from "./icons/AddressCardIcon.tsx";
 import TwitterIcon from "./icons/TwitterIcon.tsx";
 import PrivacyIcon from "./icons/PrivacyIcon.tsx";
 import UnsplashIcon from "./icons/UnsplashIcon.tsx";
+import ThreadsIcon from "./icons/ThreadsIcon.tsx";
 
 // deno-lint-ignore no-empty-interface
 interface HeaderProps {
@@ -38,11 +39,11 @@ export default function Header(props: HeaderProps) {
             <LinkedInIcon size={16} />
           </a>
           <a
-            href="https://twitter.com/hejsfj"
+            href="https://www.threads.net/@hejsfj"
             className="text-white hover:text-white"
           >
-            <span className="sr-only">LinkedIn</span>
-            <TwitterIcon size={16} />
+            <span className="sr-only">Threads</span>
+            <ThreadsIcon size={16} />
           </a>
           <a
             href="https://instagram.com/hejsfj"
