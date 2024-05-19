@@ -11,11 +11,11 @@ import Header from "../components/Header.tsx";
 
 const projects = [
   {
-    title: "Fred | Achieve your goals",
+    title: "Fred",
     anchor: "fred",
     link: "https://apps.apple.com/de/app/fred-achieve-your-goals/id6478763884?l=en-GB",
     description:
-      "Achieve your goals with Fred. Fred is your dedicated app to set and track your goals. By adding actionable steps to your goals you will always have a plan on how to achieve your goals. If you need some inspiration for your next goal you can explore the goal gallery, where you can add predefined best practice goals.",
+      "Fred is your dedicated app to achieve your goals with actionable steps.",
     backgroundImage: "/img/fred.jpg",
     icon: "sun",
     highlights: [
@@ -35,7 +35,7 @@ const projects = [
     anchor: "sun",
     link: "https://instagram.com/hejsfj",
     description:
-        "Every wondered, whats the best and sunniest location for your next vacation? I got you covered. Based on the climate datasets of this world, Sunny Days Ahead will guide you to the cities with the maxium sunshine and thus best vibes.",
+        "Ever wondered, whats the best and sunniest location for your next vacation? With this app you'll explore the sunniest places around the world.",
     backgroundImage: "/img/sunny-days-ahead.jpg",
     icon: "sun",
     highlights: [
@@ -44,8 +44,8 @@ const projects = [
         description: "Developed in SWIFT for the sun-lovers of tomorrow.",
       },
       {
-        title: "Build in Public.",
-        description: "Coming in Q4 2023, follow the journey on Instagram.",
+        title: "Coming soon.",
+        description: "Follow the journey on Instagram.",
       },
     ],
     buttonText: "Follow Along",
@@ -55,7 +55,7 @@ const projects = [
     anchor: "mateo",
     link: "https://hellomateo.de",
     description:
-      "Mateo is an all-in-one messaging suite for small and medium sized businesses in Germany. We have created one of the first WhatsApp Business API solutions in Germany and are now serving more than 1000 customers with our product.",
+      "Mateo is an all-in-one messaging suite for small and medium sized businesses in Germany. We have created one of the first WhatsApp Business API solutions in Germany.",
     backgroundImage: "/img/mateo.jpg",
     icon: "whatsapp",
     highlights: [
@@ -80,7 +80,7 @@ const projects = [
     anchor: "heyanna",
     link: "https://www.producthunt.com/products/heyanna",
     description:
-      "The first mobile app my co-founder Timo and me developed in early 2019. We established the first people focused co-living solution which we grew to 200 monthly active users in the first two weeks after launch.",
+      "The first mobile app my co-founder Timo and I developed in early 2019. We established the first people focused co-living solution.",
     backgroundImage: "/img/heyanna.jpg",
     icon: "mobile",
     highlights: [
@@ -105,7 +105,7 @@ const projects = [
     anchor: "aosfj",
     link: "http://unsplash.com/hejsfj",
     description:
-      "My personal photos, where you find my latest shots and cities I have captured with my camera",
+      "Moments and Adventures I captured with my camera.",
     backgroundImage: "/img/aosfj.jpg",
     icon: "camera",
     highlights: [
@@ -123,7 +123,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <div
-        className="w-full h-screen flex flex-col bg-black text-white justify-center bg-center bg-cover"
+        className="w-full h-screen flex flex-col bg-black text-white justify-end bg-center bg-cover"
         style={{
           backgroundImage:
             `linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1)), url(./img/sebastian-frederik-jacobsen.jpg)`,
@@ -132,20 +132,20 @@ export default function Home() {
       >
         <Header />
 
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:px-8 lg:py-20">
-          <div className="mx-auto max-w-3xl">
-            <div className="mx-auto">
-              <div className="mx-auto max-w-3xl lg:mx-0">
+        <div className="w-full mx-auto flex items-center justify-between max-w-7xl p-6 lg:px-8 pb-10 sm:pb-20">
+
+
+<div>
                 <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">
                   Sebastian Frederik Jacobsen
                 </p>
-                <p className="mt-0 sm:mt-3 text-xl leading-8 text-white">
-                  Hej, I am glad to meet you here. I'm a Product Owner and Optimist living in Berlin. I believe in a
+                <p className="mt-2 sm:mt-3 text-lg sm:text-xl leading-2 sm:leading-8 text-white">
+                  Hej, I am glad to meet you here. I'm a product owner and optimist living in Berlin. I believe in a
                   better tomorrow by creating digital products and experience with a lasting impact.
                 </p>
-              </div>
-            </div>
-          </div>
+
+
+
 
           <div className="flex sm:hidden mx-auto mt-8 sm:mt-20 text-base leading-7 text-white lg:mx-0 lg:max-w-none">
             <div className="relative">
@@ -161,8 +161,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hidden sm:flex mt-2 sm:mt-10 sm:mt-20 text-xl leading-8 text-white font-bold">
-            Some things I did so far.
+          <div className="hidden sm:flex mt-2 sm:mt-6 text-xl leading-8 text-white font-bold">
+            Some things I did so far
           </div>
           <div className="hidden sm:flex flex-col sm:flex-row gap-y-2 sm:gap-y-0 sm:gap-x-4 mt-2">
             {projects.map((project) => (
@@ -187,6 +187,8 @@ export default function Home() {
               </a>
             ))}
           </div>
+</div>
+          <div></div>
         </div>
       </div>
 

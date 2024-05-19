@@ -24,18 +24,16 @@ export default function Project(props: ProjectProps) {
         height: "100vh",
       }}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-20">
-        <div className="mx-auto max-w-3xl">
-          <div className="">
-            <div className="mx-auto">
-              <div className="mx-auto max-w-3xl lg:mx-0">
-                <p className="mt-2 text-5xl sm:text-6xl font-bold tracking-tight text-white">
+      <div className="w-full mx-auto flex items-center justify-between max-w-7xl p-6 lg:px-8 pb-10 sm:pb-20">
+<div>
+
+                <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">
                   {props.title}
                 </p>
-                <p className="mt-3 text-xl leading-8 text-white">
+                <p className="mt-2 sm:mt-3 text-lg sm:text-xl leading-2 sm:leading-8 text-white">
                   {props.description}
                 </p>
-              </div>
+
               <div className="mx-auto mt-4 text-base leading-7 text-white lg:mx-0 lg:max-w-none">
                 <div className="relative">
                   <div className="flex flex-col items-start">
@@ -58,7 +56,7 @@ export default function Project(props: ProjectProps) {
                   </div>
                 </div>
               </div>
-              <div className="mx-auto mt-8 sm:mt-20 text-base leading-7 text-white lg:mx-0 lg:max-w-none">
+              <div className="flex mx-auto mt-8 sm:mt-20 text-base leading-7 text-white lg:mx-0 lg:max-w-none">
                 <div className="relative">
                   <a href={props.link}>
                     <button
@@ -71,9 +69,7 @@ export default function Project(props: ProjectProps) {
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+</div>
       </div>
     </div>
   );
