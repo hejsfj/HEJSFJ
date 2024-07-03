@@ -3,7 +3,7 @@ import { PageProps } from "$fresh/server.ts";
 import { asset } from "$fresh/runtime.ts";
 
 const DESCRIPTION =
-  "Hej, my name is Sebastian Frederik Jacobsen. I am glad to meet you here. I'm a product manager at CARIAD, maker, creator & optimist living in Berlin.";
+  "Hej, I am Sebastian Frederik Jacobsen. I'm a product owner and optimist living in Berlin. I believe in a better tomorrow by creating digital products and experience with a lasting impact.";
 
 export default function App({ Component }: PageProps) {
   return (
