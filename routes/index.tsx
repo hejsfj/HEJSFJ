@@ -6,6 +6,7 @@ import CameraIcon from "../components/icons/CameraIcon.tsx";
 import MobileIcon from "../components/icons/MobileIcon.tsx";
 import PlayIcon from "../components/icons/PlayIcon.tsx";
 import Header from "../components/Header.tsx";
+import RainbowIcon from "../components/icons/RainbowIcon.tsx";
 
 //define an array of projects here based on the Project.tsx component above
 
@@ -33,22 +34,22 @@ const projects = [
   {
     title: "Sunny Days Ahead",
     anchor: "sun",
-    link: "https://instagram.com/hejsfj",
+    link: "https://sunnydaysahead.app",
     description:
         "Ever wondered, whats the best and sunniest location for your next vacation? With this app you'll explore the sunniest places around the world.",
     backgroundImage: "/img/sunny-days-ahead.jpg",
-    icon: "sun",
+    icon: "rainbow",
     highlights: [
       {
         title: "iOS App.",
         description: "Developed in SWIFT for the sun-lovers of tomorrow.",
       },
       {
-        title: "Coming soon.",
-        description: "Follow the journey on Instagram.",
+        title: "Beautiful Climate Charts",
+        description: "Climate charts made beautiful and easy to read.",
       },
     ],
-    buttonText: "Follow Along",
+    buttonText: "Download Now",
   },
   {
     title: "Mateo",
@@ -175,6 +176,8 @@ export default function Home() {
                     ? <WhatsAppIcon size={16} />
                     : project.icon === "sun"
                     ? <SunIcon size={16} />
+                    : project.icon === "rainbow"
+                    ? <RainbowIcon size={16} />
                     : project.icon === "camera"
                     ? <CameraIcon size={16} />
                     : project.icon === "mobile"
